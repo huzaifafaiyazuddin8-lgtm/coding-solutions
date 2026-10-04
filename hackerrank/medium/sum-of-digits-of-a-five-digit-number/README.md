@@ -1,4 +1,4 @@
-# For Loop in C
+# Conditional Statements in C
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -30,41 +30,59 @@ Print the sum of the digits of the five digit number.
 **Language:** C  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-04T17:16:50.177Z  
+**Submitted:** 2026-10-04T17:19:10.593Z  
 
 ```c
-#include <stdio.h>
-#include <string.h>
+#include <assert.h>
+#include <limits.h>
 #include <math.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+
+char* readline();
 
 
 
-int main(){
-    int a, b;
-    scanf("%d", &a);
-    scanf("%d", &b);
-
-    char *words[] = {
-        "", "one", "two", "three", "four",
-        "five", "six", "seven", "eight", "nine"
-    };
-
-    for (int i = a; i <= b; i++) {
-        if (i >= 1 && i <= 9) {
-            printf("%s\n", words[i]);
-        } else if (i % 2 == 0) {
-            printf("even\n");
-        } else {
-            printf("odd\n");
-        }
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    switch(n){
+        case 1:
+        printf("one");
+        break;
+        case 2:
+        printf("two");
+        break;
+        case 3:
+        printf("three");
+        break;
+        case 4:
+        printf("four");
+        break;
+        case 5:
+        printf("five");
+        break;
+        case 6:
+        printf("six");
+        break;
+        case 7:
+        printf("seven");
+        break;
+        case 8:
+        printf("eight");
+        break;
+        case 9:
+        printf("nine");
+        break;
+        default:
+        printf("Greater than 9");
     }
-
-    return 0;
-
-
 }
-
 
 ```
 
